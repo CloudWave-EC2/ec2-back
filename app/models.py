@@ -1,3 +1,4 @@
+# app/models.py
 from sqlalchemy.orm import declarative_base, Mapped, mapped_column
 from sqlalchemy import Integer, String, Enum, ForeignKey
 from enum import Enum as PyEnum

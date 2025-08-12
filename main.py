@@ -1,9 +1,10 @@
+# main.py
 from fastapi import FastAPI
 from app.models import Base
 from app.database import writer_engine
 from app.routers.api import api
 
-app = FastAPI(title="CGV Booking API")
+app = FastAPI(title="CGV Booking API (Local DB)")
 
 @app.on_event("startup")
 async def on_startup():
