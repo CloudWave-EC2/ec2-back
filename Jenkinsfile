@@ -2,7 +2,7 @@ pipeline{
     agent any
     // tools {
     //   dockerTool 'docker'
-    // }
+    // }fdfdf
     stages{
         stage("checkout"){
             steps{
