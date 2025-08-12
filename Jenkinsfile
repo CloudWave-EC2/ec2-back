@@ -12,8 +12,8 @@ pipeline{
         stage("push image"){
             steps{
                 script{
-                   docker.withRegistry('https://myregistry.com:8443','registry-auth'){
-                       myapp = docker.build("myregistry.com:8443/test/hello:${env.BUILD_ID}")
+                   docker.withRegistry('hyeyeon763/ec2','dockerhub-creds'){
+                       myapp = docker.build("hyeyeon/ec2:${env.BUILD_ID}")
                        myapp.push()
                     }
                 }
